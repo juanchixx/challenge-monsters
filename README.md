@@ -7,7 +7,7 @@ Challenge en el cual se encargó trabajar con 2 microfrontends, y acceder a 2 AP
 Instalar dependencias raíz (para correr todo desde un solo lugar)
 
 ```bash
-npm install
+npm run install:all
 ```
 
 ## 🚀 Implementación
