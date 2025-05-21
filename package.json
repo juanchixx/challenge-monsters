@@ -1,0 +1,14 @@
+{
+  "name": "challenge-monsters",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start:pokemon": "cd pokemon && npm run preview",
+    "start:digimon": "cd digimon && npm run preview",
+    "start:host": "cd monsters_pick && npm run dev",
+    "start:all": "concurrently \"npm run start:pokemon\" \"npm run start:digimon\" \"npm run start:host\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
