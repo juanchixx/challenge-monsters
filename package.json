@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start:pokemon": "cd pokemon && npm run preview",
-    "start:digimon": "cd digimon && npm run preview",
+    "install:pokemon": "cd pokemon && npm install",
+    "install:digimon": "cd digimon && npm install",
+    "install:host": "cd monsters_pick && npm install",
+    "install:all": "concurrently \"npm run install:pokemon\" \"npm run install:digimon\" \"npm run install:host\"",
+    "start:pokemon": "cd pokemon && npm run build && npm run preview",
+    "start:digimon": "cd digimon && npm run build && npm run preview",
     "start:host": "cd monsters_pick && npm run dev",
     "start:all": "concurrently \"npm run start:pokemon\" \"npm run start:digimon\" \"npm run start:host\""
   },
